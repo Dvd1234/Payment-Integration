@@ -20,7 +20,7 @@
 	DataInputStream	vInput = null;
 	StringBuffer vStringBuffer = null;
 	try{
-		System.setProperty("https.protocols", "TLSv1.2");
+		System.setProperty("https.protocols", "TLSv1");
 		vUrl = new URL("https://test.ccavenue.com/transaction/getRSAKey");
 		if(vUrl.openConnection() instanceof HttpsURLConnection){
 			vHttpUrlConnection = (HttpsURLConnection)vUrl.openConnection();
